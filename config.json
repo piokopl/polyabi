@@ -1,0 +1,22 @@
+{
+  "private_key": "0xxxx",
+  "proxy_address": "0xxxx",
+  "api_key": "polymaket_user_api_key",
+  "api_secret": "polymaket_user_api_key_secret",
+  "api_passphrase": "polymaket_user_api_key_passphrase",
+  "stoploss_price": 0.20,
+  "add_step_price": 0.10,
+  "buy_amount_usdc": 1.10,
+  "buy_grid_multiplier": 1.1,
+  "pair_take_profit_pct": 0.50,
+  "pairs_reload_interval_sec": 120,
+  "interval_delay_minutes": 10,
+  "poll_interval_sec": 5.0,
+  "gamma_base_url": "https://data-api.polymarket.com",
+  "clob_host": "https://clob.polymarket.com",
+  "chain_id": 137,
+  "signature_type": 2,
+  "slippage_percent": 0.03,
+  "pairs_file": "pairs.json",
+  "adx_file": "adx.json"
+}
