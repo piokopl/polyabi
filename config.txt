@@ -18,3 +18,8 @@ clob_host - Polymarket API address
 chain_id - Polymarket chain ID
 signature_type - Polymarket order signing type
 slippage_percent - maximum price slippage in Polymarket transaction execution
+
+Notes:
+
+You can find the Private Key in your wallet, e.g., Metamask. Remember, it must be a private key for the Polygon network.
+You can generate API keys, for example, in polyneko.io in the Settings tab. These are not builder keys available on the polymarket website!
