@@ -1,0 +1,8 @@
+Configuration file description:
+
+market_key - ID of the market (event) on Plymarket whose token the bot will trade
+pair_symbol - cryptocurrency pair (BTC, ETH, XRP, SOL)
+trade_start - time the bot should start trading the given pair
+trade_end - time the bot should stop trading the given pair
+token_id - token ID
+label - token name
