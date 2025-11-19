@@ -1,0 +1,20 @@
+Configuration file description:
+
+private_key - the private key of the ECR-20 Polygon wallet used to create the Polymarket account
+proxy_address - the Polymarket wallet address
+api_key - the Polymarket account API key
+api_secret - the Polymarket account API key secret
+api_passphrase - the Polymarket account API key passphrase
+stoploss_price - the token price at which it will be sold
+add_step_price - the amount by which the initial token value must increase to complete the transaction
+buy_amount_usdc - the amount for which the token will be purchased (>1, preferably 1.1)
+buy_grid_multiplier - the purchase amount multiplier for subsequent tokens
+pair_take_profit_pct - the amount at which tokens will be sold for profit
+pairs_reload_interval_sec - the reload time of the active token file pairwise
+interval_delay_minutes - delay (in minutes) compared to the trading start time defined in the token configuration
+poll_interval_sec - data refresh time in seconds
+gamma_base_url - endpoint address for data retrieval
+clob_host - Polymarket API address
+chain_id - Polymarket chain ID
+signature_type - Polymarket order signing type
+slippage_percent - maximum price slippage in Polymarket transaction execution
