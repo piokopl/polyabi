@@ -1,9 +1,33 @@
 # polyabi
-Polymarket crypto trading grid bot PolyAbi
 
-An automated trading bot for Polymarket, utilizing the CLOB API and Data API. It operates on markets defined in pairs.json (up/down) for BTC/USDT pairs, 
-in specific time slots, with a delay, stop-loss, and take-profit for the entire pair. Instead of classic hedging, it trades only one side of the market, 
-with additional purchases in the grid if the price rises, with the size of each subsequent purchase increasing according to buy_grid_multiplier. 
-The bot dynamically reloads pairs.json and filters trade direction based on the trend in the adx.json file.
+🧠 Polymarket Single-Side Grid Bot
+
+An automated trading bot for Polymarket CLOB, built around a single-side momentum grid strategy executed within predefined time slots.
+
+🔍 How It Works
+
+Each market has multiple outcome tokens (Up/Down).
+For every trading slot, the bot:
+Waits a configurable delay period (e.g., 10 minutes) to let early volatility settle.
+Selects only one trading side (Up or Down) based on: minimum price increase threshold,
+trend filters from adx.json, selecting the strongest (highest-priced) valid leg.
+Executes the first buy only if price > baseline + step.
+Every minute, performs grid buys only if price continues rising, using a multiplier to increase position size.
+Continuously monitors:
+Stop-loss per token, Take-profit on the entire pair, removal of inactive tokens.
+
+🧩 Configuration
+
+The bot is controlled via two files:
+config.json — global bot parameters (stoploss, grid settings, delays, buy amounts, etc.)
+pairs.json — list of markets with individual trading time slots.
+
+⭐ Why This Strategy?
+
+Avoids the typical loss from dual-side hedging (where one side always bleeds).
+Concentrates capital on the side showing real momentum.
+Expands position only when price confirms strength (grid with trend).
+
+
 
 Optional you can run trend validator for better quality trades: https://github.com/piokopl/polyabi-adx
