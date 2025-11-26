@@ -27,7 +27,3 @@ pairs.json — list of markets with individual trading time slots.
 Avoids the typical loss from dual-side hedging (where one side always bleeds).
 Concentrates capital on the side showing real momentum.
 Expands position only when price confirms strength (grid with trend).
-
-
-
-Optional you can run trend validator for better quality trades: https://github.com/piokopl/polyabi-adx
