@@ -2,7 +2,7 @@ import time
 import json
 import requests
 
-URL = "https://mimir.cryptothunder.net/bot_adx"
+URL = "https://adx.cryptothunder.net/bot_adx"
 OUTPUT_FILE = "adx.json"
 INTERVAL_SECONDS = 1  
 
